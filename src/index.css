@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:sans-serif;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --mainColor : #ff8b15;
+    --bgToColor:#ff9800;
+    --bgColor: #f1f1f1;
+    --textColor:#fff;
+    --cardBG:#fff;
+    --dColor:#fff;
+    --titleColor:#333;
+    --detPColor:#2d2d2dc7;
+    --iconColor:#dedede;
+    --navActive:#fff;
+    --btnColor:#247dc3;
+    --spaColor:#333;
+}
+.dark{
+    --mainColor : #333;
+    --bgColor: #121212;
+    --bgToColor:#333;
+    --cardBG:#272727;
+    --titleColor:#abc4d8;
+    --textColor:#ff8b15;
+    --dColor:#333;
+    --iconColor:#565656;
+    --navActive:#ff8b15;
+    --detPColor:#fff;
+    --spaColor:#ffffffeb;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+section{
+    padding-top: 90px ;
+    position: relative;
+}
+.dark .dark-mood::after{
+    content: '\f185';
+    font-family: "Font Awesome 5 Pro";
+}
+a.active{
+    color: var(--navActive);
+}
+
+.pop-up.active{
+    transform: scale(1);
+}
+.cart-pou-up.active{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+div.navbar-nav.active{
+    left: 0;
+}
+.minu.active::before{
+    content: '\f00d';
+    font-weight: 100;
+}
+
+
+.navbar-nav.active{
+    transform: translate(0);
+    z-index: 1111;
+}
+
+
+@media (max-width:575px) {
+    .container{
+        max-width:95% ;
+        margin: auto;
+    }
+   
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container{
+        max-width:540px ;
+        margin: auto;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container{
+        max-width: 720px;
+        margin: auto;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container{
+        max-width: 960px;
+
+        margin: auto;
+    }
+    
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container{
+        max-width: 1140px;
+        margin: auto;
+
+    }
+    
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container{
+        max-width: 1350px;
+        margin: auto;
+
+    }
+    
+ } 
